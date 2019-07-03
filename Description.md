@@ -21,8 +21,10 @@ In urmatoarele capitole o sa fie prezentata o viziune asupra functionalitatii pr
 
 Pagina de cursuri contine si descriere legate despre fiecare curs care este disponibil din programul scolii de vara.
 Pentru fiecare curs sunt descrise numarul de sesiuni in care se va tine cursul, numarul de ore predate pe sesiune si o dificultate a cursului.
-La fiecare curs ii este prezentat un buton de perticipa care permite utilizatorului sa participe la cursul selectat in urma unei verificari a contului.
+
+La fiecare curs ii este prezentat un buton de participa care permite utilizatorului sa participe la cursul selectat in urma unei verificari a contului.
 Administratorul are acces la butoanele de adaugare curs , modificare detalii si stergere curs care ii permite sa faca gestiunea cursurilor.
+
 Este prezentata o tabela cu link-uri catre editiile anterioare ale scolii de vara si cursurile care s-au predat.
 
 ## Pagina trainers
