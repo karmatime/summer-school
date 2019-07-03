@@ -7,7 +7,7 @@ Acest document este scris pentru a prezenta detalii in legatura realizarii proie
 
 Summer School are intentia de atrage studentii/elevii/angajatii catre cursuri gratuite sustinute la Universitatea din Craiova. Acest proiect ofera o interfata web care ajuta la inscrierea in cadrul cursurilor de vara si ofera monitorizarea programelor de studii si anunturilor pentru cursurile planificate.
 
-## Descriere
+## [Descriere](Description.md/#descriere)
 * [Acasa](Description.md/#pagina-acasa)
 * [Cursuri](Description.md/#pagina-cursuri)
 * [Trainers](Description.md/#pagina-trainers)
@@ -19,7 +19,7 @@ Summer School are intentia de atrage studentii/elevii/angajatii catre cursuri gr
 * [Gestionarea contului](Description.md/#pagina-de-gestiune-a-contului)
 * [Gestiune](Description.md/#pagina-de-gestiuneadmin)
 
-## Detalii Tehnice
+## [Detalii Tehnice](Tech.md/#detalii-tehnice)
 * [Inregistrare](Tech.md/#inregistrare)
 * [Autentificare](Tech.md/#autentificare)
 * [Inscriere](Tech.md/#inscriere)
