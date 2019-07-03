@@ -25,9 +25,13 @@ In momentul inscriereii la un curs, utilizatorul poate vedea cursurile la care s
 In cazul in care utilizatorul este deja inscris la un curs, acesta poate sa renunte in orice moment de la a frecventa la acel curs.
 
 ### Verificare email
-Codul de verificare o sa fie generat random si va fi introdus in tabela **accounts**. In momentul in care un utilizator cere sa faca verificarea contului, acest cod va fi trimis prin email(sau va fi trimis un email alternativ care va conduce la verificarea contului).
+Codul de verificare o sa fie generat random si va fi introdus in tabela [accounts](#accounts). In momentul in care un utilizator cere sa faca verificarea contului, acest cod va fi trimis prin email(sau va fi trimis un email alternativ care va conduce la verificarea contului).
 
 Rolul utilizatorului o sa fie 0(default). Acest rol stabileste accesul la site.
+
+### Noutati
+
+
 
 -----------
 ## DATABASE
