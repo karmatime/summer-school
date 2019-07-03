@@ -5,7 +5,7 @@ Acest site va contine urmatoarele pagini:
 * [Cursuri](#pagina-cursuri)
 * [Trainers](#pagina-trainers)
 * [Program](#pagina-program)
-* [Contact](#pagina-contact)
+* [Contact](#pagina-de-contact)
 * [Noutati](#pagina-noutati)
 * [Inregistrare](#pagina-de-inregistrare)
 * [Autentificare](#pagina-de-autentificare)
