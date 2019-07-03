@@ -1,7 +1,7 @@
 # Descriere
 
 Acest site va contine urmatoarele pagini:
-* Acasa
+* [Acasa](#pagina-acasa)
 * Cursuri
 * Trainers
 * Program
