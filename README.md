@@ -1,7 +1,7 @@
 # Summer School
 ## Introducere
 
-Acest document este scris pentru a prezenta detalii in legatura realizarii proiectului Summer School. Motivele si functionalitatea sunt explicate la fiecare subiect, acest document este adresat catre dezvoltatorii proiectului si catre clienti.
+Acest document este scris pentru a prezenta detalii in legatura realizarii proiectului Summer School. Motivele si functionalitatea sunt explicate la fiecare subiect, acest document este adresat dezvoltatorilor proiectului si clientilor.
 
 ## Scopul proiectului
 
