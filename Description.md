@@ -33,11 +33,4 @@ Profesia este folosita pentru statistici in functie de numarul de participant la
 
 Diagrama care prezinta informatiile necesare pentru a se crea un cont cu succes:
 
-```mermaid
-graph LR
-A[Nume] --> B(Inregistrare)
-C[Prenume] -->B
-D[Email] -->B
-E[Profesie] -->B
-F[Password] -->B
-```
+![alt text](https://github.com/karmatime/summer-school/blob/master/Register.png "Logo Title Text 1")
