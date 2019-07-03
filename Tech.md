@@ -29,6 +29,18 @@ Codul de verificare o sa fie generat random si va fi introdus in tabela [account
 
 ### Noutati
 
+Utilizatorii o sa aiba access doar sa vada anunturile publicate de catre administrator.
+Pentru administrator se ofera urmatoarele functionalitati:
+* add news
+* delete news
+* edit news
+
+### Manage access
+
+Administratorul poate sa ofere acces la functionalitatiile catre alti utilizatori dar utilizatorii care au primit acces de la administrator nu pot sa ofere acces la alti utilizatori.
+Pentru administrator se ofera urmatoarele functionalitati:
+* grant access to user
+* remove access from user
 
 
 -----------
