@@ -109,7 +109,7 @@ Prin accesul la aceasta pagina, administratorului ii sunt permise:
 * stergerea unui cont
 * verificarea unui cont
 * modificarea informatiilor unui cont
-* trimiterea de email catrea utilizatorul respectiv
+* trimiterea de email catre utilizatorul respectiv
 * gestionarea conturilor cu acces de administrator
-* inregistrarea la cursuri pentru utilizator
-* oprirea frecventarii la cursuri pentru utilizatori
+* inregistrarea utilizatorilor la cursuri
+* oprirea frecventarii utilizatorilor la cursuri
