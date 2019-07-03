@@ -1,4 +1,4 @@
-# Pagina de contact
+## Pagina de contact
 
 Contact.html: Se vor afisa informatiile de contact ale Universitatii din Craiova si ale organizatoriilor scolii de vara din sesiunea curenta.
 
@@ -33,4 +33,4 @@ Profesia este folosita pentru statistici in functie de numarul de participant la
 
 Diagrama care prezinta informatiile necesare pentru a se crea un cont cu succes:
 
-![alt text](https://github.com/karmatime/summer-school/blob/master/Register.png "Logo Title Text 1")
+![alt text](https://github.com/karmatime/summer-school/blob/master/Register.png "Register")
