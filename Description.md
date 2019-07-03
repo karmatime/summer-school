@@ -79,6 +79,8 @@ Daca utilizatorul nu isi mai aminteste parola, acesta poate sa apeleze la linkul
 
 ## Pagina de gestiune a contului
 
+Aceasta pagina este vizibila numai dupa autentificarea cu un cont pe site-ul Summer School.
+
 In pagina de gestiune a contului, utilizatorul va putea sa isi modifice informatiile personale din contul pe care il detine pe acest site.
 Aceasta pagina va contine trei sectiunii:
 
@@ -93,6 +95,8 @@ Aceasta pagina va contine trei sectiunii:
 
 
 ## Pagina de gestiune(admin)
+
+Aceasta pagina este vizibila numai dupa autentificarea cu un cont care are accesul de administrator.
 
 Aceasta pagina este atribuita administratorului. Acesta poate sa faca intreaga gestiune a conturilor, participantilor si a cursurilor.
 Aceasta pagina va contine mai multe tabele in care sunt afisati participantii la cursuri sortati dupa cursurile la care participa. Administratorului ii este permis sa gestioneze participantii de la cursuri si conturile acestora. Aceasta pagina contine si o bara de search ca permite utilizatorului sa caute intr-un mod eficient participantii.
