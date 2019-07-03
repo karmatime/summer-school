@@ -71,7 +71,7 @@ Profesia este folosita pentru statistici in functie de numarul de participant la
 
 Diagrama care prezinta informatiile necesare pentru a se crea un cont cu succes:
 
-![alt text](https://github.com/karmatime/summer-school/blob/master/Register.png "Register")
+![alt text](https://github.com/karmatime/summer-school/blob/master/Images/Markdown/Register.png "Register")
 
 ## Pagina de autentificare
 
@@ -79,7 +79,7 @@ Autentificarea se va face pe baza adresei de email cu care sa inregistrat utiliz
 
 Daca utilizatorul nu isi mai aminteste parola, acesta poate sa apeleze la linkul forget password care ii va trimite pe email un link pentru a ii permite sa isi stabileasca o parola noua.
 
-![alt text](https://github.com/karmatime/summer-school/blob/master/Login.png "Login")
+![alt text](https://github.com/karmatime/summer-school/blob/master/Images/Markdown/Login.png "Login")
 
 ## Pagina de gestiune a contului
 
