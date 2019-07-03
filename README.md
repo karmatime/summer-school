@@ -16,4 +16,4 @@ Summer School are intentia de atrage studentii/elevii/angajatii catre cursuri gr
 * Inregistrare
 * Autentificare
 
-
+### [Detalii Tehnice](Tech.md)
