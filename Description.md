@@ -1,6 +1,8 @@
-Program.html: Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui table. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile. Optional:Program care este afisat dupa zilele saptamanii.
+#Pagina de contact
 
 Contact.html: Se vor afisa informatiile de contact ale Universitatii din Craiova si ale organizatoriilor scolii de vara din sesiunea curenta.
+
+Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui table. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile. Optional:Program care este afisat dupa zilele saptamanii.
 
 Inregistrarea se va face pe baza a unui nume si prenume alese de catre utilizator, aceste putand fi dublicate in baza de date. Email-ul o sa fie componenta care impune restrictiile catre crearea contului, nu pot fi create mai multe conturi cu aceasi adresa de email. Parola va fi stocata pe minim 6 caractere. Parola o sa fie stocata in baza de date sub forma hash. Confirmarea parolei trebuie sa fie identica cu parola introdusa in campul password. Profesia o sa fie folosita pentru statistici in functie de numarul de participant la cursuri. -elev, -student, -angajat.
 
