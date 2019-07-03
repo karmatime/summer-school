@@ -10,7 +10,7 @@
 	Summer School are intentia de a atrage studentii/elevii/angajatii catre cursuri gratuite sustinute la Universitatea din Craiova.
 	Acest proiect ofera o interfata web care ajuta la inscrierea in cadrul cursurilor de vara si ofera monitorizarea programelor de studii pentru cursurile planificate.
 
-* [Descriere]
+* [Descriere](Pagina de contact)
 
 Program.html:
 	Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui table. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile.
