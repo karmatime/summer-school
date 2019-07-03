@@ -2,15 +2,15 @@
 
 Acest site va contine urmatoarele pagini:
 * [Acasa](#pagina-acasa)
-* Cursuri
-* Trainers
-* Program
-* Contact
-* Noutati
-* Inregistrare
-* Autentificare
-* Gestionarea contului 
-* Gestiune
+* [Cursuri](#pagina-cursuri)
+* [Trainers](#pagina-trainers)
+* [Program](#pagina-program)
+* [Contact](#pagina-contact)
+* [Noutati](#pagina-noutati)
+* [Inregistrare](#pagina-inregistrare)
+* [Autentificare](#pagina-autentificare)
+* [Gestionarea contului](#pagina-de-gestiune-a-contului)
+* [Gestiune](#pagina-de-gestiune(admin))
 
 
 In urmatoarele capitole o sa fie prezentata o viziune asupra functionalitatii proiectului:
