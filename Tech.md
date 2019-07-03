@@ -1,1 +1,1 @@
-
+# Detalii Tehnice
