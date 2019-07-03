@@ -1,10 +1,34 @@
+# Descriere
+
+Acest site va contine urmatoarele pagini:
+* Acasa
+* Cursuri
+* Trainers
+* Contact
+* Noutati
+* Inregistrare
+* Autentificare
+* Gestionarea contului
+* Gestiune
+
+
+In urmatoareale capitole o sa fie prezentata o viziune asupra functionalitatii proiectului:
+
+## Pagina acasa
+
+## Pagina cursuri
+
+# Pagina trainers
+
 ## Pagina de contact
 
 Se vor afisa informatiile de contact ale Universitatii din Craiova si ale organizatoriilor scolii de vara din sesiunea curenta.
 
 Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui table. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile. Optional:Program care este afisat dupa zilele saptamanii.
 
-## Inregistrare
+## Pagina noutati
+
+## Pagina de inregistrare
 
 Inregistrarea se va face pe baza a unui nume, prenume, adrese de email, profesie si o parola.
 
@@ -25,10 +49,14 @@ Diagrama care prezinta informatiile necesare pentru a se crea un cont cu succes:
 
 ![alt text](https://github.com/karmatime/summer-school/blob/master/Register.png "Register")
 
-## Autentificare
+## Pagina de autentificare
 
 Autentificarea se va face pe baza adresei de email cu care sa inregistrat utilizatorul si pe baza parolei pe care a stabilit-o pentru acel cont.
 
 Daca utilizatorul nu isi mai aminteste parola, acesta poate sa apeleze la linkul de forget password care ii va trimite pe email un link pentru a ii permite sa isi stabileasca o parola noua.
 
 ![alt text](https://github.com/karmatime/summer-school/blob/master/Login.png "Login")
+
+## Pagina de gestiune a contului
+
+## Pagina de gestiune(admin)
