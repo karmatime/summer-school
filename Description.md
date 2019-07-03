@@ -18,7 +18,7 @@ In urmatoareale capitole o sa fie prezentata o viziune asupra functionalitatii p
 
 ## Pagina cursuri
 
-# Pagina trainers
+## Pagina trainers
 
 ## Pagina de contact
 
