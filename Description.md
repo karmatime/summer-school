@@ -11,3 +11,33 @@ Profesia este un element optional. Codul de verificare o sa fie generat random s
 Autentificarea se va face pe baza adresei de email cu care sa inregistrat utilizatorul si pe baza parolei pe care a stabilito pentru acel cont. Daca utilizatorul nu isi mai aminteste parola, acesta poate sa apeleze la linkul de forget password care ii va trimite pe email un link pentru a ii permite sa isi stabileasca o parola noua.
 
 In momentul inscriereii la un curs, utilizatorul poate vedea cursurile la care se poate inscrie.
+
+## Inregistrare
+
+
+
+Inregistrarea se va face pe baza a unui nume, prenume, adrese de email, profesie si o parola.
+
+Numele si prenumele o sa fie elemente care pot fi mentionate identice de catre mai multi utilizatori. Nu se poate crea un cont care are introdus caractere speciale in nume sau in prenume .
+
+Email-ul este componenta care impune restrictiile la crearea contului, nu pot fi create mai multe conturi cu aceasi adresa de email. Mai tarziu contul va fi verificat folosind adresa de email inregistrata in cont.
+
+Parola va fi stocata pe minim 6 caractere. Nu se permite folosirea caracterelor speciale in parola. Parola o sa fie stocata in baza de date sub forma hash.
+
+Confirmarea parolei trebuie sa fie identica cu parola introdusa in campul password.
+
+Profesia este folosita pentru statistici in functie de numarul de participant la cursuri. Optiuniile de selectare a profesiei sunt:
+* elev
+* student
+* angajat
+
+Diagrama care prezinta informatiile necesare pentru a se crea un cont cu succes:
+
+```mermaid
+graph LR
+A[Nume] --> B(Inregistrare)
+C[Prenume] -->B
+D[Email] -->B
+E[Profesie] -->B
+F[Password] -->B
+```
