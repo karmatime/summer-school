@@ -14,7 +14,7 @@ Parola trebuie sa aiba minim 6 caractere si sa nu contina caractere speciale. El
 
 Pentru autentificare se va folosi email-ul si parola. Se foloseste functie de hash pentru ca parola sa poata fi scrisa in clar dar aceasta sa fie primita catre baza de date in hash.
 
-Dupa autentificare, prima pagina afisata va fi [Home](/master/Description.md/#pagina-acasa).
+Dupa autentificare, prima pagina afisata va fi [Home](https://github.com/karmatime/summer-school/blob/master/Description.md/#pagina-acasa).
 
 ### Inscriere
 In momentul inscriereii la un curs, utilizatorul poate vedea cursurile la care se poate inscrie. 
@@ -23,8 +23,6 @@ In momentul inscriereii la un curs, utilizatorul poate vedea cursurile la care s
 *	Daca contul utilizatorului nu a fost verificat, atunci acesta va primi prin mail un link sau un cod de verificare pentru cont. In momentul in care utilizatorul va accesa acel link sau va introduce acel cod, contul va fi verificat si poate sa selecteze cursurile la care poate participa.
 
 In cazul in care utilizatorul este deja inscris la un curs, acesta poate sa renunte in orice moment de la a frecventa la acel curs.
-
-In momentul cand un utilizator sa inscris la un curs, in baza de date va fi trecuta valoarea 1 pentru faptul ca este inscris la cursul respectiv , initial valoarea este 0 pentru ca nu este inscris la acel curs.
 
 ### Verificare email
 Codul de verificare o sa fie generat random si va fi introdus in tabela **accounts**. In momentul in care un utilizator cere sa faca verificarea contului, acest cod va fi trimis prin email(sau va fi trimis un email alternativ care va conduce la verificarea contului).
@@ -42,8 +40,29 @@ Rolul utilizatorului o sa fie 0(default). Acest rol stabileste accesul la site.
 *	email
 *	profesie
 *	password(hash)
-*	[cod de verificare](#verificare-email)
-*	rolul utilizatorului(#rolul-utilizatorului)
+*	[cod_de_verificare](#verificare-email)
+*	[rolul_utilizatorului](#rolul-utilizatorului)
+
+### curs
+
+* **id**
+* nume_curs
+* detalii
+
+### program
+
+* **id**
+* data_inceput
+* data_sfarsit
+* curs_id
+
+### user_curs
+
+* **id**
+* user_id
+* curs_id
+
+
 
 ## Rolul utilizatorului
 
