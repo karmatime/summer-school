@@ -7,10 +7,10 @@ Acest site va contine urmatoarele pagini:
 * [Program](#pagina-program)
 * [Contact](#pagina-contact)
 * [Noutati](#pagina-noutati)
-* [Inregistrare](#pagina-inregistrare)
-* [Autentificare](#pagina-autentificare)
+* [Inregistrare](#pagina-de-inregistrare)
+* [Autentificare](#pagina-de-autentificare)
 * [Gestionarea contului](#pagina-de-gestiune-a-contului)
-* [Gestiune](#pagina-de-gestiune(admin))
+* [Gestiune](#pagina-de-gestiuneadmin)
 
 
 In urmatoarele capitole o sa fie prezentata o viziune asupra functionalitatii proiectului:
