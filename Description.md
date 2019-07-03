@@ -59,4 +59,14 @@ Daca utilizatorul nu isi mai aminteste parola, acesta poate sa apeleze la linkul
 
 ## Pagina de gestiune a contului
 
+In pagina de gestiune a contului, utilizatorul va putea sa isi modifice informatile presonale din contul pe care il detine pe acest site.
+Aceasta pagina va contine trei sectiunii:
+ ### * infromatii generale
+ Utilizatorul va putea sa isi modifice numele , prenumele sau profesia in cazul unor greseli de scriere.
+ ### * gestionarea cursurilor
+ Utilizatorul va putea sa gestioneze cursurile la care este inscris, prin aceasta gestiune el poate sa aleaga sa nu mai frecventeze la un curs pe care la ales anterior.
+  ### * securitate
+  Utilizatorul va putea sa modifice parola pe care a stabilit-o pentru acel cont si va putea sa isi stearga contul in cazul in care acesta nu a fost corect.
+
+
 ## Pagina de gestiune(admin)
