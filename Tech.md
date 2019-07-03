@@ -27,3 +27,4 @@ Ii este permisa orice modificarea a contului creat personal.
 
 Utilizatorul admin are acces complet asupra site-ului si asupra bazei de date. Are acces la sectionea de manage participants care ii permite sa stearga sau sa modifice orice utilizator din lista de participare de la un curs.
 
+![alt text](https://github.com/karmatime/summer-school/blob/master/AdminAccount.png "AdminAccount")
