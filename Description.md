@@ -1,4 +1,4 @@
-#Pagina de contact
+# Pagina de contact
 
 Contact.html: Se vor afisa informatiile de contact ale Universitatii din Craiova si ale organizatoriilor scolii de vara din sesiunea curenta.
 
