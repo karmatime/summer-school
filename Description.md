@@ -4,6 +4,7 @@ Acest site va contine urmatoarele pagini:
 * Acasa
 * Cursuri
 * Trainers
+* Program
 * Contact
 * Noutati
 * Inregistrare
@@ -18,15 +19,32 @@ In urmatoarele capitole o sa fie prezentata o viziune asupra functionalitatii pr
 
 ## Pagina cursuri
 
+Pagina de cursuri contine si descriere legate despre fiecare curs care este disponibil din programul scolii de vara.
+Pentru fiecare curs sunt descrise numarul de sesiuni in care se va tine cursul, numarul de ore predate pe sesiune si o dificultate a cursului.
+La fiecare curs ii este prezentat un buton de perticipa care permite utilizatorului sa participe la cursul selectat in urma unei verificari a contului.
+Administratorul are acces la butoanele de adaugare curs , modificare detalii si stergere curs care ii permite sa faca gestiunea cursurilor.
+Este prezentata o tabela cu link-uri catre editiile anterioare ale scolii de vara si cursurile care s-au predat.
+
 ## Pagina trainers
+
+Aceasta pagina contine informatii despre trainerii care se ocupa cu invatarea participantilor pe parcursul programul scolii de vara.
+Pentru fiecare trainer este prezentat cursul/cursurile pe care le preda, informatii in legatura cu firma la care lucreaza si postul acestuia.
+
+## Pagina program
+
+Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui tabel. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile.
+
 
 ## Pagina de contact
 
 Se vor afisa informatiile de contact ale Universitatii din Craiova si ale organizatorilor scolii de vara din sesiunea curenta.
 
-Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui tabel. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile. Optional:Program care este afisat dupa zilele saptamanii.
 
 ## Pagina noutati
+
+Pagina de noutati contine informatii si evenimente legate de cursurile din scoala de vara.
+In momentul in care un utilizator va accesa un anunt, anuntul resprectiv se va deschide intr-o pagina noua si se vor prezenta toate detalile despre acel anunt.
+Pentru administrator vor mai fi adaugate butoane care ii permit sa adauge, sterga, modifice un anunt.
 
 ## Pagina de inregistrare
 
