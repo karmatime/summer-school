@@ -1,5 +1,4 @@
 # Detalii Tehnice
-=================
 
 ### Inregistrare
 In momentul creari unui cont, utilizatorul trebuie sa introduca infromatii in toate campurile.
@@ -15,7 +14,7 @@ Parola trebuie sa aiba minim 6 caractere si sa nu contina caractere speciale. El
 
 Pentru autentificare se va folosi email-ul si parola. Se foloseste functie de hash pentru ca parola sa poata fi scrisa in clar dar aceasta sa fie primita catre baza de date in hash.
 
-Dupa autentificare, prima pagina afisata va fi [Home](../Description.md/#pagina-acasa).
+Dupa autentificare, prima pagina afisata va fi [Home](../blob/master/Description.md/#pagina-acasa).
 
 ### Inscriere
 In momentul inscriereii la un curs, utilizatorul poate vedea cursurile la care se poate inscrie. 
