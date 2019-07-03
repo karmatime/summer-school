@@ -81,7 +81,7 @@ Pentru administrator se ofera urmatoarele functionalitati:
 ## Rolul utilizatorului
 
 Sunt prezentate 4 tipuri de roluri pentru utilizatori. Aceste roluri vor stabili accesul utilizatorilor la site.
-Un utilizator care si-a creat un count va avea rolul setat in baza de date [accounts](#accounts) valoarea 0(default) iar un admin va avea accesul 1.
+Un utilizator care si-a creat un cont va avea setat in tabela [accounts](#accounts) valoarea 0(default) pentru coloana **rol**.
 
 ### Grade 1 user: guest
 
