@@ -18,7 +18,6 @@ In urmatoarele capitole o sa fie prezentata o viziune asupra functionalitatii pr
 ## Pagina acasa
 
 Pagina contine un slideshow format din poze referitoare la cursurile scolii de vara, si poze de la editile anterioare.
-
 Sunt prezentate detalii despre scoala de vara, perioada de desfasurare si locul unde vor fi desfasurate cursurile.
 
 ## Pagina cursuri
