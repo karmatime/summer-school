@@ -1,13 +1,15 @@
 # Summer School
 
-* Introducere
+# Introducere
 
 	Acest document este scris pentru a prezenta detalii in legatura realizarii proectului Summer School. Motivele si functionalitatea o sa fie explicate la fiecare subiect, acest document este adresat catre dezvoltatorii proiectului si catre client.
 
-Scopul proiectului:
+# Scopul proiectului
+
 	Summer School are intentia de a atrage studentii/elevii/angajatii catre cursuri gratuite sustinute la Universitatea din Craiova. Acest proiect ofera o interfata web care ajuta la inscrierea in cadrul cursurilor de vara si ofera monitorizarea programelor de studii pentru cursurile planificate.
 
-Descriere:
+* [Descriere]
+
 Program.html:
 	Se vor afisa orele si datele stabilite pentru cursurile de vara sub forma unui table. Se poate folosi sortarea dupa numele cursului si dupa data in care se vor desfasura cursurile.
 	Optional:Program care este afisat dupa zilele saptamanii.
