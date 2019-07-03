@@ -27,8 +27,6 @@ In cazul in care utilizatorul este deja inscris la un curs, acesta poate sa renu
 ### Verificare email
 Codul de verificare o sa fie generat random si va fi introdus in tabela [accounts](#accounts). In momentul in care un utilizator cere sa faca verificarea contului, acest cod va fi trimis prin email(sau va fi trimis un email alternativ care va conduce la verificarea contului).
 
-Rolul utilizatorului o sa fie 0(default). Acest rol stabileste accesul la site.
-
 ### Noutati
 
 
@@ -69,6 +67,9 @@ Rolul utilizatorului o sa fie 0(default). Acest rol stabileste accesul la site.
 
 
 ## Rolul utilizatorului
+
+Sunt prezentate 4 tipuri de roluri pentru utilizatori. Aceste roluri vor stabili accesul utilizatorilor la site.
+Un utilizator care si-a creat un count va avea rolul setat in baza de date [accounts](#accounts) valoarea 0(default) iar un admin va avea accesul 1.
 
 ### Grade 1 user: guest
 
