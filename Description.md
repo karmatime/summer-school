@@ -73,3 +73,15 @@ Aceasta pagina va contine trei sectiunii:
 
 
 ## Pagina de gestiune(admin)
+
+Aceasta pagina este atribuita catre administrator, acesta trebuie sa faca intreaga gestiune a conturilor, participantilor si a cursurilor.
+Aceasta pagina va contine mai multe tabele in care sunt afisati participantii la cursuri sortati dupa cursurile la care participa. Administratorului ii este permis sa gestioneze participantii de la cursuri si conturile acestora. Aceasta pagina contine si o bara de search ca permite utilizatorului sa caute intr-un mod eficient participantii.
+
+Prin accesul la aceasta pagina, administratorului ii este permis:
+* stergerea unui cont
+* verificarea unui cont
+* modificarea informatiilor unui cont
+* trimiterea de email catrea utilizatorul respectiv
+* gestionarea conturilor cu acces de administrator
+* inregistrarea la cursuri pentru utilizator
+* oprirea frecventarii la cursuri pentru utilizatori
