@@ -1,5 +1,4 @@
 # Summer School
-===============
 
 # Introducere
 -------------
