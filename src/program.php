@@ -42,6 +42,7 @@ include "header.php";
         print("</tr>\n");
         print("</table><br>\n");
   }
+  if($_SESSION['rol'] ==1){
 
 ?>
 
@@ -85,6 +86,6 @@ include "header.php";
   </div>
  
  <?php
-
+  }
   include "footer.php";
   ?>

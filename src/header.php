@@ -40,6 +40,8 @@ include "connect.php";
   
   echo "<a href='news.php'>News</a> ";
 
+  echo "<a href='program.php'>Program</a> ";
+
   echo "<a href='manage-account.php'> Manage account</a> ";
 
   echo "<a href='manage-account-security.php'> Manage accounts security</a> ";

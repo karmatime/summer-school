@@ -386,6 +386,10 @@ $command = $_REQUEST["command"];
           session_id('main');
           session_start();
 
+          if($_SESSION['rol'] != 1){
+            echo "<script type='text/javascript'>alert('You dont have access!');</script>";
+          }
+          else{
           $saptamana=$_POST['saptamana'];
           $zi=$_POST['zi'];
           $ora=$_POST['ora'];
@@ -395,8 +399,8 @@ $command = $_REQUEST["command"];
        if (!mysqli_query($conexiune, $sql)) {
         die('Error: '.mysqli_error($conexiune));
       }
-
       header("Location: program.php");
+    }
 
 
           break;
