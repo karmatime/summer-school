@@ -26,16 +26,15 @@ else{
 ?>
 <form action="commands.php" method="post">
 <input name="command" type="hidden" value="reset_password" />
+<input name="idreset" type="hidden" value=<?php echo $idreset;?>>
+<input name="codereset" type="hidden" value=<?php echo $codereset;?>>
         Password: <input name="resetpassword" type="password">
         Confirm password: <input name="resetconfirmpassword" type="password">
        
         <input type="submit" value="Reset"/>
       </form>
       <?php
-      session_id("reset");
-      session_start();
-      $_SESSION['idreset']= $idreset;
-      $_SESSION['codereset']= $codereset;
+    
         }
       }
     }

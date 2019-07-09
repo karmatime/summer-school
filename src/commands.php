@@ -33,17 +33,17 @@ $command = $_REQUEST["command"];
       }
       else{
         if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $nume)){
-          echo "<script type='text/javascript'>alert('Invalid nume!');</script>";
+          echo "<script type='text/javascript'>alert('Invalid first name! Special characters not allowed!');</script>";
       }
         else if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $prenume)){
-            echo "<script type='text/javascript'>alert('Invalid prenume!');</script>";
+          echo "<script type='text/javascript'>alert('Invalid last name! Special characters not allowed!');</script>";
         }
         else if(mysqli_num_rows($check_email_duplicate) > 0){
   
             echo "<script type='text/javascript'>alert('Email already exist!');</script>";
         }
         else if(!preg_match('/^[A-Za-z0-9][A-Za-z0-9]{5,31}$/', $password)){
-            echo "<script type='text/javascript'>alert('Password is invalid!');</script>";
+            echo "<script type='text/javascript'>alert('Password is invalid! Password must have at last 6 characters. Special characters not allowed!');</script>";
         }
         else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
             echo "<script type='text/javascript'>alert('Invalid email!');</script>";
@@ -91,7 +91,7 @@ $command = $_REQUEST["command"];
       $email = $_POST["email"];
       $password = $_POST["password"];
 
-      $raw =  mysqli_query($conexiune,"SELECT * FROM accounts WHERE email = '$email'" );
+      $raw =  mysqli_query($conexiune,"SELECT * FROM accounts WHERE email = '$email'");
       $results=mysqli_fetch_array($raw);
      
       if($results['email'] == $email && password_verify($password, $results['password']) == true){
@@ -110,8 +110,11 @@ $command = $_REQUEST["command"];
         header("Location: home.php");
 
       }
-      else{
-        echo "Login failed.";
+      else if($results['email'] != $email){
+        echo "<script type='text/javascript'>alert('You are not registered!');</script>";
+      }
+      else if(password_verify($password, $results['password']) == false){
+        echo "<script type='text/javascript'>alert('Invalid password!');</script>";
       }
 
       break;
@@ -136,13 +139,12 @@ $command = $_REQUEST["command"];
     session_id("main");
     session_start();
 
-    $id_curs = $_REQUEST["id"];
+    $id_curs =$_REQUEST["id"];
     $id_user =$_SESSION["id"];
 
     if(!isset($_SESSION['id'])){
       echo "<script type='text/javascript'>alert('You must login first!');</script>";
     }
-
     else{
     $raw=mysqli_query($conexiune, "SELECT * FROM user_curs WHERE user_id='$id_user' AND curs_id='$id_curs'");
     $check_duplicate_participations=mysqli_num_rows($raw);
@@ -165,12 +167,19 @@ $command = $_REQUEST["command"];
     break;
     
     case 'addnews':
+    session_id('main');
+    session_start();
+
+    if($_SESSION['rol'] != 1){
+      echo "<script type='text/javascript'>alert('You dont have access!');</script>";
+    }
+    else{
 
       $subject= $_REQUEST["Subject"];
       $details= $_REQUEST["Details"];
       
       if($subject == "" || $details == ""){
-        echo "TextField IS Empty.";
+        echo "<script type='text/javascript'>alert('Please fill all required fields!');</script>";
 
       }
         else{
@@ -184,6 +193,7 @@ $command = $_REQUEST["command"];
       }
         }
         header("Location: news.php");
+      }
         break;
 
         case "deletenews":
@@ -219,11 +229,12 @@ $command = $_REQUEST["command"];
       if (!mysqli_query($conexiune, $sql)) {
         die('Error: ' . mysqli_error($conexiune));
       }
+      header("Location: courses.php");
     }
     else{
       echo "<script type='text/javascript'>alert('You dont have access!');</script>";
     }
-    header("Location: courses.php");
+    
       break; 
 
       case "mail":
@@ -269,8 +280,7 @@ $command = $_REQUEST["command"];
         echo "<script type='text/javascript'>alert('Please fill all the required fields!');</script>";
         
       }
-      else{
-        if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $manage_nume)){
+        else if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $manage_nume)){
             echo "<script type='text/javascript'>alert('Invalid name!');</script>";
         }
         else if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $manage_prenume)){
@@ -283,7 +293,10 @@ $command = $_REQUEST["command"];
           $_SESSION['password']=$manage_password;
         
        
+          if (!mysqli_query($conexiune, "UPDATE accounts SET nume='$manage_nume', prenume='$manage_prenume', profesie='$manage_profesie' WHERE email='$manage_email'")) {
+            die('Error: ' . mysqli_error($conexiune));
           }
+          header("Location: home.php");
       }
       break;
 
@@ -313,6 +326,7 @@ $command = $_REQUEST["command"];
         if (!mysqli_query($conexiune, "UPDATE accounts SET password='$manage_hash' WHERE email='$manage_email'")) {
           die('Error: ' . mysqli_error($conexiune));
         }
+        header("Location: home.php");
       }
       break;
 
@@ -388,6 +402,13 @@ $command = $_REQUEST["command"];
           break;
 
           case "updatecourse":
+          session_id('main');
+          session_start();
+
+          if($_SESSION['rol'] !=1){
+            echo "<script type='text/javascript'>alert('You dont have access!');</script>";
+          }
+          else{
 
         $id = $_REQUEST["id"];
 
@@ -409,6 +430,7 @@ $command = $_REQUEST["command"];
       }
           }
           header("Location: courses.php");
+        }
           break;
 
           case 'addcourse':
@@ -448,11 +470,11 @@ $command = $_REQUEST["command"];
         }
           break;
 
-          case 'forgetpassword':
+          case 'forgotpassword':
 
-            $forgetemail=$_REQUEST['forgetemail'];
+            $forgotemail=$_REQUEST['forgotemail'];
       
-            $check_email= mysqli_query($conexiune,"SELECT id, cod_verificare FROM accounts WHERE email = '$forgetemail'" );
+            $check_email= mysqli_query($conexiune,"SELECT id, cod_verificare FROM accounts WHERE email = '$forgotemail'" );
             $passcode =mysqli_fetch_array($check_email);
 
             $idreset=$passcode['id'];
@@ -470,20 +492,20 @@ $command = $_REQUEST["command"];
 
             mysqli_query($conexiune,"UPDATE accounts SET cod_verificare='$cod_verificare', exp=DATE_ADD(NOW(), INTERVAL 30 MINUTE) WHERE id='$idreset'");
 
-            $check_email= mysqli_query($conexiune,"SELECT id, cod_verificare FROM accounts WHERE email = '$forgetemail'" );
+            $check_email= mysqli_query($conexiune,"SELECT id, cod_verificare FROM accounts WHERE email = '$forgotemail'" );
             $raw =mysqli_fetch_array($check_email);
       
             $idreset=$raw['id'];
             $codreset=$raw['cod_verificare'];
       
-            $url="http://localhost/summer-school/reset-password.php?id=".$idreset."&cod_verificare=".$codreset;
+            $url="http://localhost/summer-school/src/reset-password.php?id=".$idreset."&cod_verificare=".$codreset;
       
             if(mysqli_num_rows($check_email) == 0){
               echo "<script type='text/javascript'>alert('Email not registered!');</script>";
             }
             else{
 
-              $to = $forgetemail;
+              $to = $forgotemail;
               $subject = "Reset password.";
               $txt = '<a href="'.$url.'">'.$url.'</a>';
               $headers = "From: Summer School <testsummerschool2019@gmail.com>\r\n". 
@@ -497,11 +519,9 @@ $command = $_REQUEST["command"];
             break;
 
             case 'reset_password':
-            session_id("reset");
-            session_start();
 
-            $idreset=$_SESSION['idreset'];
-            $codereset=$_SESSION['codereset'];
+            $idreset=$_POST['idreset'];
+            $codereset=$_POST['codereset'];
             $resetpassword=$_POST['resetpassword'];
             $resetconfirmpassword=$_POST['resetconfirmpassword'];
               

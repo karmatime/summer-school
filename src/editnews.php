@@ -27,9 +27,9 @@ $row = mysqli_fetch_array($result);
   </form>
  
 <?php           
-include "footer.php";
 }
-if($_SESSION['rol']!= 1) {
+else{
   echo "<script type='text/javascript'>alert('You dont have access!');</script>";
 }
+include "footer.php";
 ?>

@@ -26,10 +26,10 @@ $row = mysqli_fetch_array($result);
     <input type="submit" value="Update"/>
   </form>
  
-<?php           
-include "footer.php";
-}
-if($_SESSION['rol']!= 1) {
+<?php 
+}          
+else{
   echo "<script type='text/javascript'>alert('You dont have access!');</script>";
 }
+include "footer.php";
 ?>

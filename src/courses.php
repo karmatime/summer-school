@@ -3,7 +3,7 @@ include "header.php";
  
  $query = "SELECT * FROM curs";
  $result = mysqli_query($conexiune, $query);
- if($_SESSION['rol']== 1){
+ if($_SESSION['rol'] == 1){
 ?>
 
  <form action="addcourse.php" method="post">
@@ -19,8 +19,9 @@ include "header.php";
       print("<tr>\n");
 
       echo "<td width ='85%'><a href='coursedetails.php?id={$row['id']}'>".$row['nume']. "</a></td>";
+      if($_SESSION['verificare'] == 1){
       echo "<td><a href='commands.php?command=particip&id=" . $row['id']. "'><input type='submit' value='Paticip'></a></td>\n";
-    
+      }
       if($_SESSION['rol']== 1){
       echo "<td><a href='commands.php?command=deletecourse&id=" . $row['id']. "'><input type='submit' value='Delete'></a></td>\n";
       echo "<td><a href='editcourse.php?id=" . $row['id']. "'><input type='submit' value='Edit'></a></td>\n";

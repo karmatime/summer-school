@@ -21,6 +21,12 @@ if(!isset($_SESSION['email'])){
             <input name="verify_input" type="text">
             <input type="submit" value="Verify"/>
           </form>
+
+          <h4>Send mail</h4>
+        <form action="commands.php" method="post">
+            <input name="command" type="hidden" value="mail" />
+            <input type="submit" value="Mail"/>
+          </form>
 <?php
 }
 include "footer.php"
