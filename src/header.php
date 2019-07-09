@@ -51,8 +51,6 @@ include "connect.php";
   }
   echo "<a href='verify-account.php'>Verify account</a> ";
 
-  echo "<a href='send-mail.php'>Send mail</a> ";
-
   echo "<a href='forgot-password.php'>Forgot Password</a> ";
 
   ?>

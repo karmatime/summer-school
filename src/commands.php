@@ -494,7 +494,9 @@ $command = $_REQUEST["command"];
         
             $cod_verificare = $randomString;
 
-            mysqli_query($conexiune,"UPDATE accounts SET cod_verificare='$cod_verificare', exp=DATE_ADD(NOW(), INTERVAL 30 MINUTE) WHERE id='$idreset'");
+            $currentTime = date("Y-m-d H:i:s");
+
+            mysqli_query($conexiune,"UPDATE accounts SET cod_verificare='$cod_verificare', exp=DATE_ADD('$currentTime', INTERVAL 30 MINUTE) WHERE id='$idreset'");
 
             $check_email= mysqli_query($conexiune,"SELECT id, cod_verificare FROM accounts WHERE email = '$forgotemail'" );
             $raw =mysqli_fetch_array($check_email);
