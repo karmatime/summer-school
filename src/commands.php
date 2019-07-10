@@ -1,5 +1,9 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 include "connect.php"
+
 ?>
 
 <?php
@@ -238,6 +242,10 @@ $command = $_REQUEST["command"];
       break; 
 
       case "mail":
+
+      require "../PHPMailer/PHPMailer.php";
+      require "../PHPMailer/Exception.php";
+
       session_id("main");
       session_start();
 
@@ -251,15 +259,16 @@ $command = $_REQUEST["command"];
         die('Error: '.mysqli_error($conexiune));
       }
       $get_code = mysqli_fetch_array($code);
-      $got_code = $get_code['cod_verificare'];
+      $got_code = $get_code['cod_verificare'];     
 
-      $to = $send_mail;
-      $subject = "Verify account.";
-      $txt = $got_code;
-      $headers = "From: Summer School <testsummerschool2019@gmail.com>\r\n". 
-      $headers .= "Content-type: text/html\r\n"; 
+      $mail = new PHPMailer();
+      $mail ->setFrom("testsummerschool2019@gmail.com", "Summer School");
+      $mail ->addAddress($send_mail);
+      $mail ->isHTML(true);
+      $mail ->Subject="Verify account.";
+      $mail ->Body="$got_code";
 
-      mail($to,$subject,$txt,$headers);
+      $mail ->send();
       }
       else{
         header("Location: login.php");
@@ -476,6 +485,9 @@ $command = $_REQUEST["command"];
 
           case 'forgotpassword':
 
+            require "../PHPMailer/PHPMailer.php";
+            require "../PHPMailer/Exception.php";
+
             $forgotemail=$_REQUEST['forgotemail'];
       
             $check_email= mysqli_query($conexiune,"SELECT id, cod_verificare FROM accounts WHERE email = '$forgotemail'" );
@@ -511,13 +523,16 @@ $command = $_REQUEST["command"];
             }
             else{
 
-              $to = $forgotemail;
-              $subject = "Reset password.";
               $txt = '<a href="'.$url.'">'.$url.'</a>';
-              $headers = "From: Summer School <testsummerschool2019@gmail.com>\r\n". 
-              $headers .= "Content-type: text/html\r\n"; 
+               
+              $mail = new PHPMailer();
+              $mail ->setFrom("testsummerschool2019@gmail.com", "Summer School");
+              $mail ->addAddress($forgotemail);
+              $mail ->isHTML(true);
+              $mail ->Subject="Reset password.";
+              $mail ->Body="$txt";
 
-              mail($to,$subject,$txt,$headers);
+              $mail ->send();
             
             }
             header("Location: home.php");
