@@ -305,7 +305,7 @@ $command = $_REQUEST["command"];
           if (!mysqli_query($conexiune, "UPDATE accounts SET nume='$manage_nume', prenume='$manage_prenume', profesie='$manage_profesie' WHERE email='$manage_email'")) {
             die('Error: ' . mysqli_error($conexiune));
           }
-          header("Location: home.php");
+          header("Location: manage-account.php");
       }
       break;
 
@@ -314,7 +314,7 @@ $command = $_REQUEST["command"];
       session_start();
       
       $manage_new_password=$_POST['manage_new_password'];
-      $manage_confirm_password=$_POST['manage_confirm_passowrd'];
+      $manage_confirm_password=$_POST['manage_confirm_password'];
       $manage_email=$_SESSION['email'];
 
       if($manage_new_password == "" || $manage_confirm_password == ""){
@@ -325,7 +325,7 @@ $command = $_REQUEST["command"];
           echo "<script type='text/javascript'>alert('Password is invalid!');</script>";
       }
       else if($manage_new_password != $manage_confirm_password){
-        echo "<script type='text/javascript'>alert('Passwords doesn't match!);</script>";
+        echo "<script type='text/javascript'>alert('Parolele nu sunt identice!');</script>";
       }
       else{
 
@@ -533,9 +533,9 @@ $command = $_REQUEST["command"];
               $mail ->Body="$txt";
 
               $mail ->send();
-            
+              header("Location: verify-account.php");
             }
-            header("Location: home.php");
+            
             
             break;
 
