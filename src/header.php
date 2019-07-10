@@ -46,9 +46,6 @@ include "connect.php";
 
   echo "<a href='manage-account-security.php'> Manage accounts security</a> ";
 
-  if($_SESSION['rol'] == 1){
-  echo "<a href='manage-all.php'> Manage accounts</a> ";
-  }
   echo "<a href='verify-account.php'>Verify account</a> ";
 
   echo "<a href='forgot-password.php'>Forgot Password</a> ";

@@ -11,7 +11,7 @@ if($_SESSION['rol']== 1){
     while($row = mysqli_fetch_array($result)){
       print("<tr>\n");
       if($_SESSION['rol']== 1){
-      echo "<td width ='85%'><a href='manage-account.php?id={$row['id']}'>".$row['nume']. $row['prenume']. "</a></td>";
+      echo "<td width ='85%'><a href='manage-account.php?id={$row['id']}'>".$row['nume']." ". $row['prenume']. "</a></td>";
       }
       
       print("</tr>\n");
