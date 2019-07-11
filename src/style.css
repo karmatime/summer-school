@@ -33,3 +33,6 @@ body{
 .shadow-textarea textarea.form-control {
     padding-left: 0.8rem;
 }
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
