@@ -7,6 +7,7 @@ include "header.php";
         background-color:#25004e;
         color:#a5a5a5e7;
     }
+
         
         </style>
 
@@ -26,10 +27,12 @@ include "header.php";
                                   <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                               </div>
                               <div class="form-group">
-                                  <label for="password">Password</label>
-                                  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                                  <label for="password">Parola</label>
+                                  <input type="password" name="password" class="form-control" id="password" placeholder="Parola">
+                                  
                               </div>
-                              <div class="form-group mt-3 text-right mr-5">
+                              <a href="forgot-password.php">Am uitat parola.</a>
+                              <div class="form-group text-right mr-5">
                               <input class="btn" type="submit" value="Login"/>
                               </div>
                           </form>

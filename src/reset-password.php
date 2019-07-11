@@ -24,15 +24,67 @@ if(!isset($idreset) || !isset($codereset)){
 }
 else{
 ?>
-<form action="commands.php" method="post">
-<input name="command" type="hidden" value="reset_password" />
-<input name="idreset" type="hidden" value=<?php echo $idreset;?>>
-<input name="codereset" type="hidden" value=<?php echo $codereset;?>>
-        Password: <input name="resetpassword" type="password">
-        Confirm password: <input name="resetconfirmpassword" type="password">
-       
-        <input type="submit" value="Reset"/>
-      </form>
+<html>
+<head>
+<title>Reset password</title>
+</head>
+<body>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<style>
+    body{
+        background :url("Images/background.jpg") no-repeat fixed;
+        background-size:auto;
+        
+    }
+    footer{
+        bottom: 0;
+        width:100%;
+        color:black;
+    }
+    .btn:hover,.btn:active, .btn:focus,.btn{
+        background-color:#25004e;
+        color:#a5a5a5e7;
+    }
+    
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 ml-4 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Schimba parola</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="commands.php" method="post">
+                        <input name="command" type="hidden" value="reset_password" />
+                        <input name="idreset" type="hidden" value=<?php echo $idreset;?>>
+                        <input name="codereset" type="hidden" value=<?php echo $codereset;?>>
+                            <div class="form-group">
+                                <label for="password">Parola noua</label>
+                                <input type="password" class="form-control" name="resetpassword"  placeholder="Parola" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmp">Confima parola</label>
+                                <input type="password" class="form-control" name="resetconfirmpassword" placeholder="Parola" required>
+                            </div>
+                            <div class="form-group text-right">
+                            <input type="submit" class="btn" value="Schimba parola"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>  
       <?php
     
         }

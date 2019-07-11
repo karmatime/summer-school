@@ -1,0 +1,35 @@
+body{
+    background :url("Images/background.jpg") no-repeat fixed;
+    background-size:auto;
+ }
+.navbar{
+    background-color:#25004e;
+ }
+ footer{
+    bottom: 0;
+    width:100%;
+    color:black;
+ }
+ .btn:hover,.btn:active, .btn:focus,.btn{
+   background-color:#25004e;
+   color:#a5a5a5e7;
+}
+.owl-prev{
+    left:-30px;
+}
+.owl-next{
+    right:-30px;
+}
+.owl-prev, .owl-next{
+    position:absolute;
+    top:38%;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+    background-color:transparent;
+}
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}

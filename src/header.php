@@ -1,26 +1,6 @@
 <html>
     <head>
         <title>Summer School</title>
-        <style>
-      body{
-         background :url("Images/background.jpg") no-repeat fixed;
-         background-size:auto;
-      }
-     .navbar{
-         background-color:#25004e;
-      }
-      footer{
-         bottom: 0;
-         width:100%;
-         color:black;
-      }
-      .btn:hover,.btn:active, .btn:focus,.btn{
-        background-color:#25004e;
-        color:#a5a5a5e7;
-    }
-    
-            
-     </style>
 </head>
 <body>
 
@@ -30,6 +10,7 @@ include "connect.php";
         session_start();       
         ?>
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -44,7 +25,7 @@ include "connect.php";
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="home.php">Home</a>
+                      <a class="nav-link" href="home.php">Acasă</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="courses.php">Cursuri</a>

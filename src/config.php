@@ -5,4 +5,6 @@
   define('DB_PASS', '');
 
   error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+
+  $host = "http://localhost/summer-school/";
 ?>

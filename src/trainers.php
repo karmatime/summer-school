@@ -3,34 +3,15 @@ include "header.php";
 ?>
 
 <style>
-        .owl-prev{
-            left:-30px;
-        }
-        .owl-next{
-            right:-30px;
-        }
-        .owl-prev, .owl-next{
-            position:absolute;
-            top:38%;
-        }
-        .owl-theme .owl-nav [class*="owl-"]:hover{
-            background-color:transparent;
-        }
-        .card{
-            border:transparent;
-            height: 422px;
-        }
-        .btn:hover,.btn:active, .btn:focus,.btn{
-        background-color:#25004e;
-        color:#a5a5a5e7;
-    }
-    .card:hover{
-        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
-        background-color: #25004e;
-        color:#a5a5a5e7;
-    }
-    
-    
+    .card{
+    border:transparent;
+    height: 422px;
+}
+.card:hover{
+box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+background-color: #25004e;
+color:#a5a5a5e7;
+}
     </style>
 
     <div class="container mt-5 mb-5">
@@ -179,6 +160,9 @@ include "header.php";
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owl.theme.default.min.css">
     
     <script src="assets/owl.carousel.js"></script>
     <script src="assets/jquery.mousewheel.min.js"></script>

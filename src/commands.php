@@ -266,11 +266,14 @@ $command = $_REQUEST["command"];
       $mail ->addAddress($send_mail);
       $mail ->isHTML(true);
       $mail ->Subject="Verify account.";
-      $mail ->Body="$got_code";
+      $mail ->Body="Pentru a va verifica contul dumneavoastra, va rugam sa folositi codul trimis prin acest email.
+                    <br><h3>$got_code</h3>
+                    Pentru a accesa pagina de verificare, dati click pe Contul meu si selectati Verificare cont.";
 
       $mail ->send();
+      header("Location: verify-account.php");
       }
-      else{
+      else if(!isset($_SESSION['email'])){
         header("Location: login.php");
       }
       
@@ -487,6 +490,7 @@ $command = $_REQUEST["command"];
 
             require "../PHPMailer/PHPMailer.php";
             require "../PHPMailer/Exception.php";
+            require "config.php";
 
             $forgotemail=$_REQUEST['forgotemail'];
       
@@ -516,7 +520,7 @@ $command = $_REQUEST["command"];
             $idreset=$raw['id'];
             $codreset=$raw['cod_verificare'];
       
-            $url="http://localhost/summer-school/src/reset-password.php?id=".$idreset."&cod_verificare=".$codreset;
+            $url= $host."src/reset-password.php?id=".$idreset."&cod_verificare=".$codreset;
       
             if(mysqli_num_rows($check_email) == 0){
               echo "<script type='text/javascript'>alert('Email not registered!');</script>";
@@ -530,7 +534,7 @@ $command = $_REQUEST["command"];
               $mail ->addAddress($forgotemail);
               $mail ->isHTML(true);
               $mail ->Subject="Reset password.";
-              $mail ->Body="$txt";
+              $mail ->Body="Pentru a va scimba parola va rugam sa folositi link-ul de mai jos. <br> $txt";
 
               $mail ->send();
               header("Location: verify-account.php");

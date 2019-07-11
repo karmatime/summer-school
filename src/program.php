@@ -6,10 +6,14 @@ include "header.php";
  $print_ora="";
 
  $query=mysqli_query($conexiune,"SELECT id, nume FROM curs");
-
+ 
   for($saptamana_id=1; $saptamana_id <=$saptamana; $saptamana_id++){
-    print("<table align='center' border='1' cellspacing='1' cellpadding='15'>\n");
-    print("<tr><th>Ora</th><th>Luni</th><th>Marti</th><th>Miercuri</th><th>Joi</th><th>Vineri</th></tr>\n");
+    ?>
+    <div class="container">
+      <div class="table-responsive-sm text-center mt-5">
+                 <?php
+    print("<table class='table table-bordered' style='background-color: #ffffff;'>\n");
+    print("<tr class='table-info'><th scope='col'>Ora</th><th scope='col'>Luni</th><th scope='col'>Marti</th><th scope='col'>Miercuri</th><th scope='col'>Joi</th><th scope='col'>Vineri</th></tr>\n");
     print("<tr>\n");
         for($ora_id=1; $ora_id <=$ora; $ora_id++){
           
@@ -40,13 +44,15 @@ include "header.php";
 
         }
         print("</tr>\n");
-        print("</table><br>\n");
+        print("</table></div></div>\n");
+       
   }
   if($_SESSION['rol'] ==1){
 
 ?>
+ 
 
-<div align="center">
+<div class="text-center">
   <form action="commands.php" method="post">
     <input name="command" type="hidden" value="updateprogram" />
     <input name="id" type="hidden" value="<?php echo $id;?>" />
@@ -83,7 +89,7 @@ include "header.php";
 ?>
     <input type="submit" value="Update"/>
   </form>
-  </div>
+  </div> 
  
  <?php
   }
